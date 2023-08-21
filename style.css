@@ -1,0 +1,382 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    /* background-color: black; */
+    color: white;
+    overflow: hidden;/* to restrict scrool bar */
+    border: border-box; 
+}
+.main{
+    display: flex;
+    height: 100vh;
+    background-color: black;
+}
+.sidebar{
+    background-color: black;
+    width: 365px;
+    border-radius: 1rem;
+}
+.main-content{
+    background-color:#121212;
+     flex: 1;/*all the remaining part will  be mine */
+    border-radius: 1rem;
+    overflow: auto;
+    margin: 8px;
+   
+   
+    padding: 0 1.5rem;
+    width: 100%;
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+}
+.nav{
+    height: 115px; 
+    background-color:#121212;
+    padding: 8px 12px;
+    margin: 8px;
+    border-radius: 10px;
+}
+.nav-option{
+    height: 50px;
+    display: flex;
+    background-color:#121212;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 4px 12px;
+    column-gap: 20px;
+    gap: 20px;
+    opacity: 0.7;
+}
+.nav-option:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+.nav-option a{
+    background-color:#121212;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.nav-option i{
+    background-color: #121212;
+    font-size: 1.25rem;
+}
+#effect{
+    opacity: 1;
+}
+/* library */
+.library{
+    height: 100%;
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 8px 12px;
+    margin: 8px;
+}
+.options{
+    display: flex;
+    height: 40px;
+    padding: 4px 12px;
+    background-color: #121212;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.7;
+}
+.lib-options{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   gap: 20px;
+   background-color: #121212;
+   opacity: 0.7;
+}
+.options .lib-options:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+.lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: #121212;
+}
+.options .icons{
+    width: 64px;
+    display: flex;
+    justify-content:space-between;
+    background-color: #121212;
+}
+.options .icons i{
+    background-color: #121212;
+    font-size: 1.25rem;
+    opacity: 0.7;
+}
+.options .icons :hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+.lib-options a{
+   flex: 1;
+   background-color: #121212;
+   text-decoration: none;
+}
+/* boxes */
+.boxes{
+   background-color: #121212;
+}
+.library .first-box{
+    height: 110px;
+    width: 86%;
+  
+    padding: 14px 20px;
+    line-height: 30px;
+    background-color:#232323;
+    border-radius: 0.75rem ;
+}
+.first-box .box-1{
+    font-size:0.9rem;
+    font-weight: 700;
+    background-color:#232323;
+ 
+}
+.first-box .box-2{
+    font-size:14px;
+    font-weight: 400;
+    background-color:#232323;
+}
+.first-box button{
+    background-color: white;
+    height: 32px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 500px;
+    
+}
+.first-box .badge h4{
+    color: black;
+    background-color:white;
+}
+.badge:hover{
+   transform: scale(1.05);
+}
+#two{
+    margin: 1.3rem 0px 0px 0px;
+}
+/* main content */
+.sticky-nav{
+    position: sticky;
+    height: 65px;
+    background-color:#121212;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.images{
+   background-color:#121212;
+   display: flex;
+   gap: 1rem;
+}
+.images div{
+    background-color: black;
+    border-radius: 50%;
+}
+.user{
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.user button{
+    height: 32px;
+    margin-left: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius:400px;
+}
+.user-p{
+    background-color: black;
+}
+.badge1{
+    background-color: white;
+    color: black;
+}
+.badge2{
+    background-color:black;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.user button:hover{
+    transform: scale(1.05);
+}
+@media(max-width:1024px){
+    .hide{
+        display: none;
+    }
+}
+/* cards */
+.card{
+    background-color: #181818;
+    width: 150px;
+    border-radius: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+.card:hover{
+    background-color: #232323;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+.card img{
+    width: 100%;
+    border-radius: 1rem; 
+}
+.card-title{
+    font-weight: 700;
+    line-height: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.card-info{
+    font-size: 0.75rem;
+    font-weight: 100;
+    opacity: 0.8;
+}
+.main-content h2{
+    line-height: 5rem;
+}
+.main-content h2:hover{
+    text-decoration: underline;
+}
+.footer{
+    height: 300px;
+    margin-top: 4rem;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer .about{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5rem;
+}
+.spacing span{
+    font-weight: 700;
+}
+.spacing p{
+    line-height: 3rem;
+    font-size: small;
+    opacity: 0.7;
+}
+.spacing p:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.sociallinks{
+    display: flex;
+}
+.sociallinks .social{
+    margin-right: 1rem;
+    height: 30px;
+    width: 30px;
+    background-color: #181818;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sociallinks .social:hover{
+    background-color: #232323;
+    opacity: 1.5;
+}
+hr{
+    opacity: 0.2;
+}
+.copyright-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+}
+.end{
+    font-size: small;
+    opacity: 0.6;
+}
+.copyright p{
+    margin-left: 1rem;
+}
+.copyright{
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.spotifyab{
+    display: flex;
+   gap: 4px;
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-top: 1rem;
+}
+.controls{
+    width: 25%;
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+   opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer; /*to bring hand at the elemnt */
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+
+
+
